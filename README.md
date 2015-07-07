@@ -13,7 +13,7 @@ The binary file for the full word2vec model is available [cdis.bin.bz2](http://w
 
 3- Balancing the training examples so that every category is represented somewhere between the mean and the median
 
-The resulting training file is shuffled, and 70K training examples have been removed to be used as a validation set, available here: [training file](http://www.deepdetect.com/stuff/cdis/train_w2v_balanced.csv.bz2), [validation file](http://www.deepdetect.com/stuff/cdis/validate_w2v.csv.bz2), [test file](http://www.deepdetect.com/stuff/cdis/test_w2v.csv.bz2)
+The resulting training file is shuffled, and 70K training examples have been removed to be used as a validation set, available here: [training file](http://www.deepdetect.com/stuff/cdis/train_w2v_balanced.csv.bz2) [5.8Gb/16Gb uncompressed], [validation file](http://www.deepdetect.com/stuff/cdis/validate_w2v.csv.bz2), [test file](http://www.deepdetect.com/stuff/cdis/test_w2v.csv.bz2)
 
 4- Train a 1500x750x750 neural net with PReLu activations and dropout (0.5) for ~1M iterations
   
