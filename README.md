@@ -11,6 +11,10 @@ The binary file for the full word2vec model is available [cdis.bin.bz2](http://w
 
 2- Add up the vectors for Description, Libelle and Marque features, this yields a 200-D description that fully replaces all text in initial dataset
 
+The script preproc_w2v.py does this. Beware, it uses Gensim's word2vec reader, and it may require patching due to a UTF8 mismatch. Report problems in a github issue if this problem arises.
+
+Based on this script, you can use the word vectors as you want for your own purposes and algorithms in the competition.
+
 3- Balancing the training examples so that every category is represented somewhere between the mean and the median
 
 The resulting training file is shuffled, and 70K training examples have been removed to be used as a validation set, available here: [training file](http://www.deepdetect.com/stuff/cdis/train_w2v_balanced.csv.bz2) [5.8Gb/16Gb uncompressed], [validation file](http://www.deepdetect.com/stuff/cdis/validate_w2v.csv.bz2), [test file](http://www.deepdetect.com/stuff/cdis/test_w2v.csv.bz2)
