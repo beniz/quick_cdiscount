@@ -11,7 +11,10 @@ The binary file for the full word2vec model is available [cdis.bin.bz2](http://w
 
 2- Add up the vectors for Description, Libelle and Marque features, this yields a 200-D description that fully replaces all text in initial dataset
 
-The script preproc_w2v.py does this. Beware, it uses Gensim's word2vec reader, and it may require patching due to a UTF8 mismatch. Report problems in a github issue if this problem arises.
+The script preproc_w2v.py does this. Beware, it uses Gensim's word2vec reader, and it may require patching due to a UTF8 mismatch. To fix this, replace Gensim's word2vec.py line 914 with
+```
+word = b''.join(word)
+```
 
 Based on this script, you can use the word vectors as you want for your own purposes and algorithms in the competition.
 
